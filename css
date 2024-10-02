@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    font-family: sans-serif; /* changed font family to sans-serif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* added to bring the container to the center top */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    width: 100px; /* increased the logo size */
+    height: 100px; /* increased the logo size */
+    margin-bottom: 10px; /* add some space between the logo and headings */
+}
+
+h1, h2 {
+    color: #000; /* changed text color to black */
+}
+
+h1 {
+    font-size: 3em; /* reduced font size */
+    margin: 0;
+}
+
+h2 {
+    font-size: 1em; /* reduced font size */
+    margin-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+.attach-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.attach-button:hover {
+    background-color: #3e8e41;
+}
+
+.file-input {
+    display: none;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-results li {
+    margin: 10px;
+    width: 25%;
+}
+
+.search-results a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.search-results img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.search-results h2 {
+    font-size: 16px;
+    margin-top: 10px;
+}
